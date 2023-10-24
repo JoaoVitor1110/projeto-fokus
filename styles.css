@@ -264,7 +264,6 @@ h1, h2, h3, h4, h5, h6 {
 .app__section-task-list-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 2rem;
     border-radius: 0.8rem;
     background: var(--fundo-card);
@@ -277,6 +276,7 @@ h1, h2, h3, h4, h5, h6 {
 .app__section-task-list-item-description {
     flex-grow: 1;
     margin: 0;
+    align-items: center;
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 600;

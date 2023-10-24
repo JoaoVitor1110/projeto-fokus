@@ -2,6 +2,7 @@ const taskListContainer = document.querySelector('.app__section-task-list')
 
 const formTask = document.querySelector('.app__form-add-task')
 const toggleFormTaskBtn = document.querySelector('.app__button--add-task')
+const cancelFormTaskBtn = document.querySelector('.app__form-footer__button--cancel')
 const formLabel = document.querySelector('.app__form-label')
 
 const textArea = document.querySelector('.app__form-textarea')
@@ -43,6 +44,11 @@ tarefas.forEach(task => {
 toggleFormTaskBtn.addEventListener('click', () => {
     formLabel.textContent = 'Adicionando Tarefa'
     formTask.classList.toggle('hidden')
+})
+
+cancelFormTaskBtn.addEventListener('click', ()=> {
+    formTask.classList.toggle('hidden')
+    textArea.value = ""
 })
 
 formTask.addEventListener('submit', (evento) => {
